@@ -1,0 +1,27 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Minhas Compras</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item (click)="openDetailPage()">
+      <p>Compra dia: 12/01/2019</p>
+      <p>Valor: 256,90</p>
+    </ion-item>
+    <ion-item>
+      <p>Compra dia: 12/01/2019</p>
+      <p>Valor: 256,90</p>
+    </ion-item>
+  </ion-list>
+
+  <ion-fab bottom right (click)="openRegisterOrder()">
+    <button ion-fab color="primary">
+      <ion-icon name="add"></ion-icon>
+    </button>
+  </ion-fab>
+</ion-content>
