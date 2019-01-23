@@ -1,6 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
+import { SQLite } from '@ionic-native/sqlite';
 
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -11,6 +12,7 @@ import { OrderProvider } from '../providers/order/order';
 import { OrderPage } from '../pages/order/order';
 import { OrderDetailPage } from '../pages/order-detail/order-detail';
 import { RegisterOrderPage } from '../pages/register-order/register-order';
+import { ConnectionProvider } from '../providers/sqlite/connection';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { RegisterOrderPage } from '../pages/register-order/register-order';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    OrderProvider
+    OrderProvider,
+    ConnectionProvider,
+    SQLite
   ]
 })
 export class AppModule {}

@@ -1,5 +1,7 @@
 {
   "name": "market_notes",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
