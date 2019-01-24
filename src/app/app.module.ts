@@ -12,7 +12,6 @@ import { OrderProvider } from '../providers/order/order';
 import { OrderPage } from '../pages/order/order';
 import { OrderDetailPage } from '../pages/order-detail/order-detail';
 import { RegisterOrderPage } from '../pages/register-order/register-order';
-import { ConnectionProvider } from '../providers/sqlite/connection';
 
 @NgModule({
   declarations: [
@@ -39,7 +38,6 @@ import { ConnectionProvider } from '../providers/sqlite/connection';
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     OrderProvider,
-    ConnectionProvider,
     SQLite
   ]
 })

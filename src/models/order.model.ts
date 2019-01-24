@@ -1,21 +1,19 @@
-import { Model } from './model';
+import { Model } from 'sequelite';
 
 export class Order extends Model {
-    first: string;
-    last: string;
+    description: string;
+    value: number;
 
     constructor() {
         super(
             {
-                first: {
+                description: {
                     type: 'TEXT'
                 },
-                last: {
-                    type: 'TEXT'
+                value: {
+                    type: 'REAL'
                 }
             }
         )
     }
 }
-
-// console.log(new User().getFields())
